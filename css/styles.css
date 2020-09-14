@@ -3415,7 +3415,7 @@ div.anythingSlider .arrow.forward a {
 .vjs-play-control span { display: block; font-size: 0; line-height: 0; }
 .vjs-paused .vjs-play-control span {
     width: 0; height: 0; margin: 8px 0 0 8px;
-    /* Drawing the play triangle with borders - http://www.infimum.dk/HTML/slantinfo.html */
+    /* Drawing the play triangle with borders - https://www.infimum.dk/HTML/slantinfo.html */
     border-left: 10px solid #fff; /* Width & Color of play icon */
     /* Height of play icon is total top & bottom border widths. Color is transparent. */
     border-top: 5px solid rgba(0,0,0,0); border-bottom: 5px solid rgba(0,0,0,0);
@@ -3529,7 +3529,7 @@ div.vjs-big-play-button:hover {
 div.vjs-big-play-button span {
     display: block; font-size: 0; line-height: 0;
     width: 0; height: 0; margin: 20px 0 0 23px;
-    /* Drawing the play triangle with borders - http://www.infimum.dk/HTML/slantinfo.html */
+    /* Drawing the play triangle with borders - https://www.infimum.dk/HTML/slantinfo.html */
     border-left: 40px solid #fff; /* Width & Color of play icon */
     /* Height of play icon is total top & bottom border widths. Color is transparent. */
     border-top: 20px solid rgba(0,0,0,0); border-bottom: 20px solid rgba(0,0,0,0);
@@ -3537,7 +3537,7 @@ div.vjs-big-play-button span {
 
 /* Spinner Styles
 ---------------------------------------------------------*/
-/* CSS Spinners by Kilian Valkhof - http://kilianvalkhof.com/2010/css-xhtml/css3-loading-spinners-without-images/ */
+/* CSS Spinners by Kilian Valkhof - https://kilianvalkhof.com/2010/css-xhtml/css3-loading-spinners-without-images/ */
 .vjs-spinner { display: none; position: absolute; top: 50%; left: 50%; width: 100px; height: 100px; z-index: 1; margin: -50px 0 0 -50px;
                /* Scaling makes the circles look smoother. */
                transform: scale(0.5); -webkit-transform:scale(0.5); -moz-transform:scale(0.5);

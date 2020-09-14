@@ -299,7 +299,7 @@ jQuery(document).ready(function($) {
 			$restore_button_wrapper.append($restore_button);
 			$theme_control_panel.append($restore_button_wrapper);
 			var $buynow_button_wrapper = $('<div/>').addClass('restore_button_wrapper');
-			var $buynow_button = $('<a/>').text('Buy it for $15').attr('id','restore_button').click(function() { window.location = 'http://themeforest.net/item/happy-kids-multipurpose-html-template/2967230?ref=CreativeWS'; return false; });
+			var $buynow_button = $('<a/>').text('Buy it for $15').attr('id','restore_button').click(function() { window.location = 'https://themeforest.net/item/happy-kids-multipurpose-html-template/2967230?ref=CreativeWS'; return false; });
 			$buynow_button_wrapper.append($buynow_button);
 			$theme_control_panel.append($buynow_button_wrapper);
 			
