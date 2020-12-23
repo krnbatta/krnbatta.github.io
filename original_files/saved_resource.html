@@ -1,0 +1,49 @@
+
+<!-- saved from url=(0011)about:blank -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>(function inject() {
+        var open = XMLHttpRequest.prototype.open;
+
+        XMLHttpRequest.prototype.open = function () {
+          this.requestMethod = arguments[0];
+          open.apply(this, arguments);
+        };
+
+        var send = XMLHttpRequest.prototype.send;
+
+        XMLHttpRequest.prototype.send = function () {
+          var onreadystatechange = this.onreadystatechange;
+
+          this.onreadystatechange = function () {
+            function GenerateQuickId() {
+              var randomStrId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+              return randomStrId.substring(0, 22);
+            }
+
+            try {
+              if (this.readyState === 4) {
+                var id = 'detector';
+                var mes = {
+                  posdMessageId: 'PANELOS_MESSAGE',
+                  posdHash: GenerateQuickId(),
+                  type: 'VIDEO_XHR_CANDIDATE',
+                  from: id,
+                  to: id.substring(0, id.length - 2),
+                  content: {
+                    requestMethod: this.requestMethod,
+                    url: this.responseURL,
+                    type: this.getResponseHeader('content-type'),
+                    content: this.response
+                  }
+                };
+                window.postMessage(mes, '*');
+              }
+            } catch (e) {}
+
+            if (onreadystatechange) {
+              return onreadystatechange.apply(this, arguments);
+            }
+          };
+
+          return send.apply(this, arguments);
+        };
+      })();</script><script type="text/javascript" src="https://static.zdassets.com/web_widget/latest/preload.c2839d69e85022a84eed.js"></script><script type="text/javascript" src="https://static.zdassets.com/web_widget/latest/vendors~lazy/web_widget.9dc7b1f513c47f4ab974.chunk.js"></script><script type="text/javascript" src="https://static.zdassets.com/web_widget/latest/lazy/web_widget.549a8e20c699c545ebc6.chunk.js"></script><script type="text/javascript" src="https://static.zdassets.com/web_widget/latest/web_widget.6c7ea89c43fd8a7bac80.chunk.js"></script><script type="text/javascript" src="https://static.zdassets.com/web_widget/latest/vendors~web_widget.ccbc82c9f877226a18ba.chunk.js"></script><script type="text/javascript" src="https://static.zdassets.com/web_widget/latest/vendors~lazy/web_widget~messenger.943ae64619f5da844a13.chunk.js"></script><script type="text/javascript" src="https://static.zdassets.com/web_widget/latest/chat-sdk.ef57fe179f7fdba70997.chunk.js"></script><script charset="utf-8" src="https://static.zdassets.com/web_widget/latest/vendors~web_widget.ccbc82c9f877226a18ba.chunk.js"></script><script charset="utf-8" src="https://static.zdassets.com/web_widget/latest/web_widget.6c7ea89c43fd8a7bac80.chunk.js"></script><style data-styled="" data-styled-version="4.3.2"></style><script charset="utf-8" src="https://static.zdassets.com/web_widget/latest/locales/en-us-json.15692f2f120276004b07.chunk.js"></script><script charset="utf-8" src="https://static.zdassets.com/web_widget/latest/lazy/support.98482751e918bc9474f4.chunk.js"></script></head><body data-new-gr-c-s-check-loaded="14.988.0" data-gr-ext-installed="" bis_status="ok" bis_frame_id="3456"></body></html>
