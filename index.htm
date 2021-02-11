@@ -2929,9 +2929,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <a href="https://www.99bikes.com.au/workshop"><i class="fa fa-wrench" aria-hidden="true"></i>Repairs</a>
 <a href="https://www.99bikes.com.au/customer/account"><i class="fa fa-user" aria-hidden="true"></i>Account</a>
 </div></div>
-</div></div><div class="header content" bis_skin_checked="1"><span data-ammenu-js="menu-toggle" class="action nav-toggle ammenu-toggle-display">
+</div></div><div class="header content" bis_skin_checked="1">
+<!-- <span data-ammenu-js="menu-toggle" class="action nav-toggle ammenu-toggle-display">
   <span>Toggle Nav</span>
-</span>
+</span> -->
 <span data-action="toggle-nav" class="action nav-toggle"><span>Toggle Nav</span></span>
 <a class="logo" href="https://www.99bikes.com.au/" title="Rupe" aria-label="store logo">
     <span style="color: black;font-size: 30px;text-decoration: underline;font-weight: bold;">Rupe</span>
@@ -6225,8 +6226,24 @@ if((document.body).className.match(new RegExp('(\\s|^)catalog-product-view(\\s|$
         })('MARIO_POST_CLIENT_almalgbpmcfpdaopimbdchdliminoign')
 </script>
 <style>
-.action.search:before, .action.showcart:before, .fa-map-marker:before, .fa-times-circle:before, .fa-times-circle:before, .fa-wrench:before, .fa-user:before, .fa-phone:before{
+.action.search:before, .action.showcart:before, .fa-map-marker:before, .fa-times-circle:before, .fa-times-circle:before, .fa-wrench:before, .fa-user:before, .fa-phone:before, .control:before, .vertical-tabs .ui-accordion-icons:after, .product.data.items .item.title a:after{
   content: "" !important;
+}
+@media (max-width:768px) {
+  a.logo{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (min-width:768px) {
+  #qrimage{
+    width: 164.2px;
+    height: 200px;
+    transform: scale(1.5);
+    top: 50px;
+    position: relative;
+  }
 }
 </style>
 </html>
